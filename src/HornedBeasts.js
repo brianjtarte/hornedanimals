@@ -4,8 +4,9 @@ class HornedBeasts extends React.Component {
   render() {
     return (
       <>
-        <h1>Title: {this.props.title}</h1>
-        <p>I can put any text {this.props.description}</p>
+        <h2>{this.props.title}</h2>
+        <p>{this.props.imageUrl}</p>
+        <p>{this.props.description}</p>
       </>
     )
   }

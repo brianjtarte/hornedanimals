@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.css';
+import './App'
 import HornedBeasts from './HornedBeasts';
 
 class Main extends React.Component {
@@ -6,7 +8,10 @@ class Main extends React.Component {
     return (
       <>
         <p>Horned Animals</p>
-        <HornedBeasts title={'A Horned Beast'} description={'a unified unicorn'}/>
+        <HornedBeasts title/>
+        <HornedBeasts imgUrl/>
+        <HornedBeasts description/>
+
       
       </>
     )

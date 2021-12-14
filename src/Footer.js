@@ -1,10 +1,12 @@
 import React from 'react';
+import './App.css';
+import './App'
 
 class Footer extends React.Component {
   render() {
     return (
       <>
-        <h1>Horned Animals</h1>
+        <h6>Author: Brian Tarte</h6>
         
       </>
     );

@@ -1,18 +1,27 @@
 import React from 'react';
 import './App.css';
 import './App'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import HornedBeasts from './HornedBeasts';
 
 class Main extends React.Component {
   render() {
+
     return (
       <>
         <p>Horned Animals</p>
-        <HornedBeasts title/>
-        <HornedBeasts imgUrl/>
-        <HornedBeasts description/>
+        <Container className="main">
+          <Row xs={1} md={2} lg={4} className="g-4">
+            {this.props.beastImg.map(beast => (
+              <Col>
+                <HornedBeasts beastObj={beast} />
+              </Col>
+              ))}
+          </Row>
+        </Container>
 
-      
       </>
     )
   }

@@ -26,7 +26,9 @@ class HornedBeasts extends React.Component {
 
             </Card.Text>
             <Card.Text>
-              <Card.Img src="https://lvlt.thesims3.com/sims3_asset/sims3_asset/thumb/shard000/000/024/916/31/original.jpg" alt="heart" />{this.state.beastVote}
+              {/* <Card.Img src="https://lvlt.thesims3.com/sims3_asset/sims3_asset/thumb/shard000/000/024/916/31/original.jpg" alt="heart" /> */}
+              
+              ❤️ = {this.state.beastVote}
             </Card.Text>
 
           </Card.Body>

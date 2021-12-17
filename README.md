@@ -1,3 +1,18 @@
+Number and name of feature: Lab 02 - Horned Animals
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 630PM 12/15
+
+Finish time: 505PM 12/16
+
+Actual time needed to complete: 3.5
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

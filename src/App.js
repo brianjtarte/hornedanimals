@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Container from 'react-bootstrap/Container';
 import Main from './Main.js';
@@ -12,25 +13,27 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      displayBeast: false,
+      showBeast: false,
       selectedBeast: {}
     }
   }
 
-  showBeast = (name) => {
-    this.setState({displayBeast: true})
-    ;
+  displayBeasts = (name) => {
+    const selectedBeast = beastData.find(beastObj => beastObj.title === name);
+    this.setState({showBeast: true,
+    selectedBeast: selectedBeast});
+  }
+  onHide = () => {
+    this.setState({showBeast: false});
   }
 
-  onHide = () => {
-    this.setState({displayBeast: false});
-  }
+  
   render() {
     return (
       <Container className="App">
         <Header />
-        <Main beastImg={beastData} showBeast={this.showBeast}/>
-        <SelectedBeast show={this.state.displayBeast} onHide={this.onHide}/>
+        <Main beastImg={beastData} displayBeasts={this.displayBeasts}/>
+        <SelectedBeast show={this.state.showBeast} onHide={this.onHide} selectedBeast={this.state.selectedBeast}/>
         <Footer />
       </Container>
     );

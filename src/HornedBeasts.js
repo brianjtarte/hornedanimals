@@ -11,6 +11,7 @@ class HornedBeasts extends React.Component {
   }
   handleClick = () => {
     this.setState({ beastVote: this.state.beastVote + 1 })
+    this.props.showBeasts(this.props.beastObj.title)
   }
 
   render() {
@@ -26,7 +27,7 @@ class HornedBeasts extends React.Component {
 
             </Card.Text>
             <Card.Text>
-              {/* <Card.Img src="https://lvlt.thesims3.com/sims3_asset/sims3_asset/thumb/shard000/000/024/916/31/original.jpg" alt="heart" /> */}
+
               
               ❤️ = {this.state.beastVote}
             </Card.Text>

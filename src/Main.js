@@ -16,7 +16,7 @@ class Main extends React.Component {
           <Row xs={1} md={2} lg={4} className="g-4">
             {this.props.beastImg.map((beast, idx) => (
 
-              <HornedBeasts beastObj={beast} key={idx} />
+              <HornedBeasts beastObj={beast} key={idx} showBeasts={this.props.showBeast} />
 
             ))}
           </Row>

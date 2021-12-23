@@ -1,12 +1,12 @@
-Number and name of feature: Lab 02 - Horned Animals
+Number and name of feature: Lab 04 - Form
 
 Estimate of time needed to complete: 2 hours
 
-Start time: 630PM 12/15
+Start time: 8PM 12/21
 
-Finish time: 505PM 12/16
+Finish time: 734PM 12/22
 
-Actual time needed to complete: 3.5
+Actual time needed to complete: 3.5 and an assist from Hexx!
 
 
 

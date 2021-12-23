@@ -7,6 +7,7 @@ import Header from './Header.js';
 import Footer from './Footer.js';
 import beastData from './data.json';
 import SelectedBeast from './SelectedBeast';
+import BeastForm from './BeastForm';
 
 
 class App extends React.Component {
@@ -14,8 +15,14 @@ class App extends React.Component {
     super(props);
     this.state = {
       showBeast: false,
-      selectedBeast: {}
-    }
+      selectedBeast: {},
+      gallery: beastData
+
+    };
+  };
+
+  updateBeastGallery = (filteredBeasts) => {
+    this.setState({gallery: filteredBeasts});
   }
 
   displayBeasts = (name) => {
@@ -32,7 +39,8 @@ class App extends React.Component {
     return (
       <Container className="App">
         <Header />
-        <Main beastImg={beastData} displayBeasts={this.displayBeasts}/>
+        <BeastForm updateBeastGallery={this.updateBeastGallery}/>
+        <Main beastImg={this.state.gallery} displayBeasts={this.displayBeasts}/>
         <SelectedBeast show={this.state.showBeast} onHide={this.onHide} selectedBeast={this.state.selectedBeast}/>
         <Footer />
       </Container>
